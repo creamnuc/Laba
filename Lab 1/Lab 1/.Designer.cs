@@ -34,6 +34,7 @@
             this.lblAttempts = new System.Windows.Forms.Label();
             this.lstUsedLetters = new System.Windows.Forms.ListBox();
             this.picHangman = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picHangman)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             // lstUsedLetters
             // 
             this.lstUsedLetters.FormattingEnabled = true;
-            this.lstUsedLetters.Location = new System.Drawing.Point(482, 286);
+            this.lstUsedLetters.Location = new System.Drawing.Point(482, 299);
             this.lstUsedLetters.Name = "lstUsedLetters";
             this.lstUsedLetters.Size = new System.Drawing.Size(120, 95);
             this.lstUsedLetters.TabIndex = 4;
@@ -91,11 +92,22 @@
             this.picHangman.TabIndex = 5;
             this.picHangman.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(760, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Справка";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(847, 485);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.picHangman);
             this.Controls.Add(this.lstUsedLetters);
             this.Controls.Add(this.lblAttempts);
@@ -118,6 +130,7 @@
         private System.Windows.Forms.Label lblAttempts;
         private System.Windows.Forms.ListBox lstUsedLetters;
         private System.Windows.Forms.PictureBox picHangman;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -10,22 +10,22 @@ namespace Lab1._2
     {
         public class Calculator
         {
-            public double Add(double a, double b)
+            public double add(double a, double b)
             {
                 return a + b;
             }
 
-            public double Subtract(double a, double b)
+            public double subtract(double a, double b)
             {
                 return a - b;
             }
 
-            public double Multiply(double a, double b)
+            public double multiply(double a, double b)
             {
                 return a * b;
             }
 
-            public double Divide(double a, double b)
+            public double divide(double a, double b)
             {
                 if (b == 0)
                     throw new Exception("Нельзя делить на ноль!");
@@ -33,7 +33,7 @@ namespace Lab1._2
                 return a / b;
             }
 
-            public double Power(double number, double exponent)
+            public double power(double number, double exponent)
             {
                 return Math.Pow(number, exponent);
             }
