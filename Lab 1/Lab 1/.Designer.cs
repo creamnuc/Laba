@@ -49,21 +49,22 @@
             // txtLetter
             // 
             this.txtLetter.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtLetter.Location = new System.Drawing.Point(159, 132);
+            this.txtLetter.Location = new System.Drawing.Point(149, 132);
             this.txtLetter.MaxLength = 1;
             this.txtLetter.Name = "txtLetter";
             this.txtLetter.Size = new System.Drawing.Size(100, 20);
             this.txtLetter.TabIndex = 1;
+            this.txtLetter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLetter_KeyPress);
             // 
             // btnGuess
             // 
-            this.btnGuess.Location = new System.Drawing.Point(159, 186);
+            this.btnGuess.Location = new System.Drawing.Point(158, 186);
             this.btnGuess.Name = "btnGuess";
             this.btnGuess.Size = new System.Drawing.Size(75, 23);
             this.btnGuess.TabIndex = 2;
             this.btnGuess.Text = "Ввод буквы";
             this.btnGuess.UseVisualStyleBackColor = true;
-           
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
             // lblAttempts
             // 
@@ -76,7 +77,7 @@
             // lstUsedLetters
             // 
             this.lstUsedLetters.FormattingEnabled = true;
-            this.lstUsedLetters.Location = new System.Drawing.Point(481, 279);
+            this.lstUsedLetters.Location = new System.Drawing.Point(482, 286);
             this.lstUsedLetters.Name = "lstUsedLetters";
             this.lstUsedLetters.Size = new System.Drawing.Size(120, 95);
             this.lstUsedLetters.TabIndex = 4;
@@ -84,7 +85,7 @@
             // picHangman
             // 
             this.picHangman.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picHangman.Location = new System.Drawing.Point(467, 31);
+            this.picHangman.Location = new System.Drawing.Point(467, 28);
             this.picHangman.Name = "picHangman";
             this.picHangman.Size = new System.Drawing.Size(150, 200);
             this.picHangman.TabIndex = 5;
@@ -106,8 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picHangman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
-            this.txtLetter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLetter_KeyPress);
+
         }
 
         #endregion
